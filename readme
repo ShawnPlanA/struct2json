@@ -1,0 +1,12 @@
+
+make clean
+make
+make all
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/shawn/struct2json
+rm  demo/tests2j
+
+cp tests2j  demo/
+./demo/tests2j
+cat  demo/struct_defination.json 
+
+
